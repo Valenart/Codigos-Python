@@ -1,0 +1,6 @@
+aluguel = int(input('Quantos dias o carro foi alugado? '))
+KM = float(input('Quantos KM foram rodados? '))
+dia = (aluguel * 60)
+KMrodado = (KM * 0.15)
+Total = (KMrodado + dia)
+print('Com {} dias alugados e {:.1f} KM rodados, o valor total do aluguel será de R${:.2f} '.format(aluguel, KM, Total))
