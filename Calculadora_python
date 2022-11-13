@@ -1,0 +1,43 @@
+import math
+print('==============TESTE DE CALCULADORA PYTHON==============')
+print('1 = Soma')
+print('2 = Subtração')
+print('3 = Multiplicação')
+print('4 = Divisão')
+print('5 = Calcular seno,cosseno e tangente de um ângulo')
+decisao = int(input('Olá, qual será o tipo de conta que voce precisa fazer hoje? '))
+
+if decisao == 1:
+    soma_decisao1 = float(input('Qual será o primeiro número a ser somado? '))
+    soma_decisao2 = float(input('Qual será o segundo Número? '))
+    soma_resultado = (soma_decisao1 + soma_decisao2)
+    print('O valor da soma entre {:.2f} + {:.2f} será de {:.2f}'.format(soma_decisao1, soma_decisao2, soma_resultado))
+
+elif decisao == 2:
+    sub_decisao1 = float(input('Qual será o número minuendo? '))
+    sub_decisao2 = float(input('Qual será o número que irá subtrair? '))
+    sub_resultado = (sub_decisao1 - sub_decisao2)
+    print('O valor da subtração entre {:.2f} - {:.2f} será de {:.2f}'.format(sub_decisao1, sub_decisao2, sub_resultado))
+
+elif decisao == 3:
+    mul_decisao1 = int(input('Qual será o número a ser multiplicado? '))
+    mul_decisao2 = int(input('Qual será o multiplicador? '))
+    mul_resultado = (mul_decisao1 * mul_decisao2)
+    print('O valor da multiplicação entre {} x {} será de {:.0f}'.format(mul_decisao1, mul_decisao2, mul_resultado))
+
+elif decisao == 4:
+    div_decisao1 = int(input('Qual será o número divisor? '))
+    div_decisao2 = int(input('Qual será o número dividendo? '))
+    div_resultado = (div_decisao1 / div_decisao2)
+    print('O valor da divisão entre {} / {} será de {:.0f}'.format(div_decisao1, div_decisao2, div_resultado))
+
+elif decisao == 5:
+    angulo_decisao = float(input('Qual ângulo voce deseja calcular? '))
+    Seno = math.sin(math.radians(angulo_decisao))
+    Cosseno = math.cos(math.radians(angulo_decisao))
+    Tangente = math.tan(math.radians(angulo_decisao))
+    print('O Seno do angulo {:.0f}° é {:.2f} '.format(angulo_decisao, Seno))
+    print('O Cosseno do angulo {:.0f}° é {:.2f} '.format(angulo_decisao, Cosseno))
+    print('A Tangente do angulo {:.0f}° é {:.2f} '.format(angulo_decisao, Tangente))
+else:
+    print('Por favor,digite um número de 1 a 5!')
