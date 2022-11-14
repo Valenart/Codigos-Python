@@ -3,7 +3,7 @@ print('\033[34m==============TESTE DE CALCULADORA PYTHON==============\033[m')
 print('\033[34m1\033[m = Soma \n\033[34m2\033[m = Subtração \n\033[34m3\033[m = Multiplicação ')
 print('\033[34m4\033[m = Divisão')
 print('\033[34m5\033[m = Seno,cosseno e tangente de um ângulo \n\033[34m6\033[m = Potencia')
-print('\033[34m7\033[m = Hipotenusa \n\033[34m8\033[m = Temperatura')
+print('\033[34m7\033[m = Hipotenusa \n\033[34m8\033[m = Conversor de Temperatura')
 decisao = int(input('\n\033[4;34mOlá, qual será o tipo de conta que voce precisa fazer hoje?\033[m '))
 
 # Soma
